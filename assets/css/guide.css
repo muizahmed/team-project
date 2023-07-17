@@ -1,0 +1,179 @@
+body {
+  background-image: linear-gradient(to bottom, lightyellow, white);
+}
+
+.directions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0.7fr;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.directions img,
+.parking img {
+  width: 95%;
+  height: 90%;
+}
+
+.howToFind,
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+.howToFind h2 {
+  font-size: 30px;
+  padding: 12px;
+}
+.howToFind p {
+  font-size: 20px;
+  padding: 12px;
+}
+.address h3 {
+  font-size: 20px;
+  padding: 12px;
+}
+.address p {
+  font-size: 16px;
+  padding: 3px 12px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel*/
+.accordion {
+  color: black;
+  cursor: pointer;
+  width: 97%;
+  text-align: left;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  padding: 18px;
+  margin-left: 10px;
+  transition: 0.4s;
+  font-size: 20px;
+}
+.transport .accordion {
+  background-image: linear-gradient(to bottom, #f3ccff, white);
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.transport .accordion:hover {
+  background-image: linear-gradient(to bottom, #e4a5ff, #e4a5ff);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  margin-left: 10px;
+  max-width: 570px;
+}
+
+.accordion:after {
+  content: "\002B";
+  color: black;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.parking {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 30px;
+  font-size: 18px;
+}
+table {
+  border-radius: 8px;
+}
+td {
+  padding: 20px;
+  width: 240px;
+  text-align: center;
+}
+.light {
+  background-color: ivory;
+}
+.dark {
+  background-color: lemonchiffon;
+}
+.park-map img {
+  width: 100%;
+  height: 100%;
+}
+.park-map h2 {
+  margin: 20px;
+  padding: 12px;
+}
+
+.FAQ {
+  margin: 30px;
+}
+
+.FAQ h2 {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.FAQ .accordion {
+  width: 100%;
+  margin: 10px;
+  background-image: linear-gradient(to bottom, lemonchiffon, ivory);
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+.FAQ .panel {
+  max-width: max-content;
+  background-color: ivory;
+}
+
+.active,
+.FAQ .accordion:hover {
+  background-image: linear-gradient(to bottom, #ffd95a, #ffd95a);
+}
+
+@media only screen and (max-width: 800px) {
+  .directions {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1.2fr;
+  }
+  .parking {
+    grid-template-columns: 1fr;
+  }
+  .parking img {
+    margin: 20px;
+    width: 70%;
+    height: 70%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .directions img {
+    width: 350px;
+    height: 210px;
+    padding: 30px 0 0 20px;
+  }
+  .directions {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}

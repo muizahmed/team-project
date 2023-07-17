@@ -1,0 +1,241 @@
+#ticket-page {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1.4fr 1fr;
+  background-color: white;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  margin-left: 30px;
+}
+
+#ticket-page h2,
+.group h2 {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+#ticket-options h2 {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 30px;
+}
+
+/* flex box for pricing */
+.pricing-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.pricing-plan {
+  border-radius: 12px;
+  margin: 30px 30px 30px 60px;
+  flex-basis: auto;
+  flex-shrink: 1;
+  box-shadow: 6px 6px 10px -1px rgb(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgb(255, 255, 255, 0.7);
+}
+
+.plan-title {
+  background-color: #f3ccff;
+  font-size: 20px;
+  padding: 12px 12px 0px 30px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+
+.plan-features {
+  padding: 30px;
+}
+
+.plan-price {
+  background-color: #f3ccff;
+  padding: 12px 12px 12px 30px;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.plan-button {
+  margin: 12px;
+  background-color: #a555ec;
+  padding: 10px;
+  border-color: #d09cfa;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  float: right;
+}
+
+.children {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.group img,
+.children img {
+  height: 180px;
+  margin: 0px 10px 10px 10px;
+  border-radius: 3%;
+  box-shadow: 8px 8px 10px -1px rgb(0, 0, 0, 0.15),
+    -8px -8px 10px -1px rgb(255, 255, 255, 0.7);
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.middle button {
+  width: fit-content;
+}
+
+/* for elements in checkout */
+
+#ticketType {
+  border-color: #d09cfa;
+  border-radius: 10px;
+  width: fit-content;
+  height: fit-content;
+  font-size: 15px;
+  padding: 6px;
+}
+
+.ticketNumber input {
+  border-color: #d09cfa;
+  border-radius: 5px;
+  width: 100px;
+}
+
+#visitDate {
+  border: solid;
+  border-color: #d09cfa;
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 6px;
+}
+
+#visitTime {
+  border-color: #d09cfa;
+  border-radius: 10px;
+  padding: 6px;
+}
+
+.buyTickets input {
+  background-color: #a555ec;
+  padding: 12px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+}
+.summary {
+  padding-bottom: 12px;
+}
+
+#checkout,
+#contact-form {
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: max-content;
+  margin: 50px 50px 50px 20px;
+  margin-right: 50px;
+}
+
+#checkout h3,
+#contact-form h3 {
+  padding: 13px 13px 13px 0px;
+}
+
+#checkout h2 {
+  background-color: #f3ccff;
+  border-color: #d09cfa;
+  border-radius: 10px;
+  padding: 13px;
+  width: 250px;
+  box-shadow: 3px 3px 10px -1px rgb(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgb(255, 255, 255, 0.7);
+}
+
+/* contact form */
+
+#contact-form label {
+  padding: 10px 10px 10px 0px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  border-color: #d09cfa;
+  border-radius: 4px;
+}
+
+#contact-form .submit {
+  padding: 5px;
+  border-radius: 6px;
+  font-size: 15px;
+  background-color: #a555ec;
+  color: white;
+}
+
+#contact-form textarea {
+  padding: 13px;
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 1000px) {
+  #ticket-page {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  #checkout {
+    order: 1;
+  }
+  #contact-form {
+    order: 2;
+  }
+
+  #checkout,
+  #contact-form {
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+
+  #checkout h2,
+  .contact h3 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .pricing-plan {
+    margin: 30px;
+  }
+
+  .group,
+  .children {
+    flex-direction: column;
+  }
+}

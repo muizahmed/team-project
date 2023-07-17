@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tittle -->
+    <title>Theme Park Website</title>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="../../assets/css/about.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Kablammo&family=Belanosima&family=Montserrat:wght@500;800&display=swap"
+    />
+
+    <!-- CDN for fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- First Section: Logo and Navigation Links -->
+    <div class="header-top">
+      <nav>
+        <a href="../../"><img src="../../assets/images/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="../../index.html"> HOME </a></li>
+            <li><a href="../../rides/index.html"> RIDES </a></li>
+            <li><a href="../../guide/index.html">guide</a></li>
+            <li><a href="../../tickets/index.html"> BOOK A DATE </a></li>
+            <li><a href="../"> ABOUT US </a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+    </div>
+
+    <section class="dropdown-menu">
+      <nav class="navbar">
+        <ul>
+          <li><a href="#" id="openingTime"> Opening Time</a></li>
+          <li>
+            <a href="../../tickets"> Tickets +</a>
+            <ul>
+              <li><a href="../../tickets/#single-pass"> Single Pass</a></li>
+              <li><a href="../../tickets/#fast-pass"> Fast Pass</a></li>
+              <li><a href="../../tickets/#season-pass"> Season Pass</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="../"> Company +</a>
+            <ul>
+              <li><a href="../../about/mission/index.html"> Values </a></li>
+              <li><a href="../../about/contact/index.html"> Contact </a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="../../rides/#experiences"> Gallery +</a>
+            <ul>
+              <li><a href="../../rides/#experiences"> Photos </a></li>
+              <li><a href="../../rides/#experiences"> Videos </a></li>
+            </ul>
+          </li>
+          <li><a href="../../guide/#directions"> Map </a></li>
+          <li><a href="../../#reviews"> Reviews </a></li>
+          <li><a href="../../guide/#safety"> Safety </a></li>
+          <li><a href="../../guide/#find-us"> Find Us </a></li>
+          <li><a href="../../about/jobs/index.html"> Jobs </a></li>
+        </ul>
+      </nav>
+
+      <script>
+        const openingTimeLink = document.getElementById("openingTime");
+        openingTimeLink.addEventListener("mouseenter", function () {
+          openingTimeLink.textContent = "[8am-9pm] Tuesday-Sunday";
+        });
+        openingTimeLink.addEventListener("mouseleave", function () {
+          openingTimeLink.textContent = "Opening Time";
+        });
+      </script>
+    </section>
+
+    <div class="grid-container">
+      <div class="grid-column">
+        <div class="grid-item grid-header"><h1 class="title">Mission</h1></div>
+
+        <div class="grid-content">
+          <div class="grid-item">
+            <h2 class="subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac
+              hendrerit eros.
+            </h2>
+          </div>
+
+          <div class="grid-item">
+            <p class="about-us">
+              Nullam in lectus sit amet velit lobortis auctor. Duis nec nulla
+              elit. Curabitur finibus id nisl sed porta. Donec egestas, lacus
+              vel dapibus lobortis, nibh velit euismod est, et vehicula velit
+              turpis sed nunc. Nullam faucibus ultrices tortor ut convallis.
+              Pellentesque a odio finibus, vestibulum magna non, porta ipsum.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="grid-column">
+        <div class="grid-item grid-header">
+          <h1 class="title">Core Values</h1>
+        </div>
+        <div class="grid-content">
+          <div class="grid-item">
+            <h2 class="subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac
+              hendrerit eros.
+            </h2>
+          </div>
+          <div class="grid-item">
+            <p class="about-us">
+              Nullam in lectus sit amet velit lobortis auctor. Duis nec nulla
+              elit. Curabitur finibus id nisl sed porta. Donec egestas, lacus
+              vel dapibus lobortis, nibh velit euismod est, et vehicula velit
+              turpis sed nunc. Nullam faucibus ultrices tortor ut convallis.
+              Pellentesque a odio finibus, vestibulum magna non, porta ipsum.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <section class="footer">
+      <h4>MORE INFORMATION</h4>
+      <div class="footer-columns">
+        <div class="footer-column">
+          <a>
+            <p>©2023 Goldsmiths</p>
+            <br />
+            <p>Goldsmith Park, Golden Valley, London</p></a
+          >
+        </div>
+        <div class="footer-column">
+          <a href="../../guide/index.html">Plan your visit</a>
+          <a href="../../tickets">Tickets &amp; bookings</a>
+          <a href="../../guide/index.html">Opening times</a>
+          <a href="../../guide/#faq">FAQ</a>
+        </div>
+        <div class="footer-column">
+          <a href="../../guide/index.html">Visitor information</a>
+          <a href="../../guide/#safety">Health &amp; Safety</a>
+          <a href="../../guide/#accessibility">Accessibility</a>
+          <a href="../../guide/#directions">Directions</a>
+        </div>
+        <div class="footer-column">
+          <a href="../../about/index.html">Our Company</a>
+          <a href="../../about/mission/index.html">Our Values</a>
+          <a href="../../about/jobs/index.html">Job opportunities</a>
+          <a href="../../about/contact/index.html">Contact us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Code for open and close menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

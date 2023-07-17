@@ -1,0 +1,243 @@
+﻿.body {
+  background-color: floralwhite;
+}
+
+nav.solid {
+  background-color: purple;
+}
+
+.title-container {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+.title {
+  font-size: 50px;
+  font-family: "Kablammo";
+  margin-top: 50px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.about-us {
+  font-size: 20px;
+  color: gray;
+}
+
+.cards-container {
+  margin-bottom: 50px;
+}
+
+.cards-container .row {
+  column-gap: 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 400px;
+  width: 300px;
+  background-color: rgb(160, 36, 160);
+  text-align: center;
+  color: floralwhite;
+  padding: 20px;
+}
+
+.card:hover {
+  transition: 0.5s;
+  transform: scale(1.05);
+}
+
+.card-banner {
+  width: 100%;
+}
+
+.card-title {
+  font-family: "Montserrat", sans-serif;
+}
+
+.card-subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.card-button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  padding: 5px;
+  width: 150px;
+  border-width: 3px;
+  border-color: green;
+  border-radius: 30px;
+}
+
+.card-button:hover {
+  background-color: lightyellow;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .cards-container .row {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .card {
+    margin-bottom: 30px;
+    width: 80%;
+    height: 450px;
+  }
+}
+
+.grid-container {
+  width: 80%;
+  display: grid;
+  margin: 50px auto;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.grid-item {
+  text-align: center;
+  padding: 0px 50px;
+}
+
+.grid-header {
+  border: 0;
+  padding: 0;
+}
+
+.grid-content {
+  border-right: 3px solid gray;
+}
+
+.grid-container hr {
+  display: none;
+}
+
+/* Contact Page CSS */
+.contact-card {
+  margin: 50px auto;
+  width: 70%;
+  padding: 30px 30px 30px 30px;
+  border: 6px solid purple;
+  box-shadow: 10px 10px 0 rgba(218, 188, 127, 0.39);
+  border-radius: 50px;
+  position: relative;
+}
+
+.contact-card .row {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid: auto / auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+  grid-gap: 20px;
+}
+
+.contact-card .row .col {
+  position: relative;
+  width: 100%;
+  margin: 30px 20px 20px 0;
+  transition: 0.5s;
+}
+
+.contact-card .row .contact-form {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  color: black;
+}
+
+.contact-card .row .contact-form input,
+.contact-card .row .contact-form textarea {
+  position: absolute;
+  width: 90%;
+  height: 50%;
+  font-size: 24px;
+  padding: 10px 0 10px 20px;
+  border: 5px solid rgb(209, 33, 209);
+  box-shadow: 5px 5px 0 rgba(218, 188, 127, 0.39);
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.contact-card .row .contact-form label {
+  font-size: 24px;
+  line-height: 40px;
+  margin: 0 0 0 20px;
+  display: block;
+}
+
+.row .col:nth-child(6) {
+  margin-top: 64px;
+}
+
+.contact-card .row .contact-form input:focus,
+.contact-card .row .contact-form textarea:focus {
+  transition: all 0.5s;
+}
+
+.contact-card .row input[type="submit"] {
+  border: 5px solid purple;
+  box-shadow: 5px 5px 0 rgba(218, 188, 127, 0.39);
+  transform: translateY(5px);
+  padding: 5px;
+  height: 100%;
+  width: 40%;
+  cursor: pointer;
+  text-transform: uppercase;
+  line-height: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 25px;
+  transition: all 0.4s;
+}
+
+.contact-card .row input[type="submit"]:hover {
+  border: 5px solid darkred;
+  background-color: cyan;
+  transition: 0.4s;
+}
+
+.jobs-container {
+  width: 75%;
+  margin: 0px 0px 100px 100px;
+  line-height: 25px;
+}
+
+@media (max-width: 768px) {
+  .grid-content {
+    border: 0;
+  }
+
+  .grid-container hr {
+    margin-top: 50px;
+    display: block;
+    background: gray;
+    height: 3px;
+  }
+
+  .contact-card .row {
+    grid-template-columns: repeat(auto-fit, minmax(70%, 1fr));
+  }
+
+  .contact-card {
+    padding: 20px;
+  }
+
+  .contact-card h2 {
+    font-size: 34px;
+  }
+
+  .contact-card .row input[type="submit"] {
+    width: 100%;
+  }
+}
