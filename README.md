@@ -5,6 +5,7 @@ Welcome to Goldsmiths Park, London's most thrilling adventure island! Explore ov
 ## Table of Contents
 - [Introduction](#introduction)
 - [Design Principles](#design-principles)
+- [Inspiration](#inspiration)
 - [Features](#features)
 - [Navigation](#navigation)
 - [Directory Structure](#directory-structure)
@@ -17,6 +18,15 @@ Goldsmiths Park is a 5-page static website designed to showcase London's Biggest
 
 ## Design Principles
 The website adheres to fundamental design principles, ensuring a visually appealing and user-friendly experience. Attention to detail, consistency in layout, and clear navigation contribute to a seamless exploration of the amusement park.
+
+## Inspiration
+
+The project draws inspiration from live websites of some of the biggest amusement parks around the world, including but not limited to:
+- [Thorpe Park](https://www.thorpepark.com/)
+- [Karachi Winterland](https://karachi.winterland.pk/)
+- [Calaway Park](https://www.calawaypark.com/in-the-park/rides/)
+- [Six Flags](https://www.sixflags.com/larondeen)
+- [Legoland California](https://www.legoland.com/california/)
 
 ## Features
 - **Rides and Attractions:** Discover over 30 thrilling rides and attractions.
@@ -32,7 +42,7 @@ The subpage navigation menu allows users to explore different sections of the we
 The project maintains a well-organized directory structure, ensuring clarity and ease of maintenance. The structure includes folders for HTML, CSS, JS, and assets, contributing to a scalable and maintainable codebase.
 
 ## Ticket Buying Mechanism
-A simple ticket buying mechanism is integrated, allowing users to book their day trips effortlessly. The mechanism is designed with user convenience in mind, making the booking process straightforward and enjoyable.
+A simple ticket-buying mechanism is integrated, allowing users to book their day trips effortlessly. The mechanism is designed with user convenience in mind, making the booking process straightforward and enjoyable.
 
 ## Color Theme
 A consistent color theme runs throughout the website, enhancing brand identity and providing a visually cohesive experience. The color palette reflects the energetic and vibrant atmosphere of Goldsmiths Park.
